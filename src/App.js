@@ -7,7 +7,6 @@ import { loadContract } from './utils/load-contract'
 import React from 'react';
 
 
-
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const handlePageChange = (page) => {
@@ -42,9 +41,6 @@ function App() {
         },[])
 
 
-
-      
-
         useEffect(() => {
           const getAccount = async () => {
           const accounts = await web3Api.web3.eth.getAccounts()
@@ -57,8 +53,7 @@ function App() {
 
 
 return (
-    <div className="App" >
-   
+    <div className="App" > 
       <div style={{fontSize:'20px',backgroundColor: 'black', color: 'white'}}>The connected account is: {account}, the balance of the connected account is: {amount} Ether </div> 
     
      <nav style={{  border: '3px solid', textAlign: 'center', display: 'flex' , listStyle: 'none', padding: 0 ,backgroundColor:'black', borderColor:'#CBCBCB',borderRadius:'10px'}}>
